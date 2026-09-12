@@ -1,0 +1,22 @@
+[general]
+name=Geometry Exporter (en)
+qgisMinimumVersion=3.0
+qgisMaximumVersion=4.99
+description=Exports and displays the geometry of a selected feature as text (WKT, EWKT, GeoJSON, GML2, GML3, KML, and GeoHash) or saves it to spatial files (GeoPackage, Shapefile).
+version=2.0.0
+
+author=Juergen Weichand (juergen@weichand.de) - Modified by Ezequiel M Rezende
+email=emrezende@gmail.com
+
+about=The plugin displays the geometry of a selected feature as text. The following formats are currently supported: WKT, EWKT, GeoJSON, GML2, GML3, KML, GeoPackage, GeoHash, and ESRI Shapefile. Ad hoc conversions (for example, Bounding Box, Centroid, Convex Hull, and Boundary) and transformations (changing the Coordinate Reference System) are also supported.
+
+homepage=https://em-rezende.github.io/
+tracker=https://github.com/em-rezende/qgis-geometry-exporter-plugin/issues
+repository=https://github.com/em-rezende/qgis-geometry-exporter-plugin
+
+tags=WKT, EWKT, GeoJSON, GML2, GML3, KML, GeoPackage, GeoHash, ESRI, Shapefile, Vector, Translation
+
+category=Vector
+icon=geometry_exporter.svg
+experimental=False
+deprecated=False

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Exporter · Help</title>
+  <script src="lang.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Cabeçalho -->
+    <div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      <span class="badge badge-dark">ARK-Z ARQUITETURA LTDA</span>
+      <span class="badge" data-i18n="badge_tools">FERRAMENTAS GEOSPACIAIS &amp; CAD/GIS</span>
+    </div>
+
+    <h1 data-i18n="h1_title">Geometry Exporter · Exportador e Conversor de Geometrias</h1>
+
+    <p style="background: transparent; border-left: none; font-style: italic; padding-left: 0;"
+       data-i18n-html="intro"></p>
+
+    <!-- Imagem -->
+    <div class="image-showcase">
+      <img src="image_01.png" alt="Geometry Exporter UI">
+      <span data-i18n="img_caption">Interface de Usuário da Ferramenta Geometry Exporter</span>
+    </div>
+
+    <!-- Recursos -->
+    <h2 data-i18n="h2_features">🌟 Recursos e Funcionalidades Principais</h2>
+    <div class="option-grid">
+      <span class="option-item" data-i18n="feat1"></span>
+      <span class="option-item" data-i18n="feat2"></span>
+      <span class="option-item" data-i18n="feat3"></span>
+      <span class="option-item" data-i18n="feat4"></span>
+      <span class="option-item" data-i18n="feat5"></span>
+      <span class="option-item" data-i18n="feat6"></span>
+      <span class="option-item" data-i18n="feat7"></span>
+      <span class="option-item" data-i18n="feat8"></span>
+    </div>
+
+    <!-- Como usar -->
+    <h2 data-i18n="h2_howto">🚀 Como Utilizar o Geometry Exporter</h2>
+    <ul class="step-list">
+      <li data-step="1" data-i18n-html="step1"></li>
+      <li data-step="2" data-i18n-html="step2"></li>
+      <li data-step="3" data-i18n-html="step3"></li>
+      <li data-step="4" data-i18n-html="step4"></li>
+      <li data-step="5" data-i18n-html="step5"></li>
+    </ul>
+
+    <!-- Formatos -->
+    <h2 data-i18n="h2_formats">📐 Estrutura e Formatos de Dados Suportados</h2>
+    <p data-i18n="formats_intro"></p>
+
+    <div class="math-box">MultiPolygon (((X1 Y1, X2 Y2, X3 Y3, ..., X1 Y1)))</div>
+
+    <p style="margin-top: 0.5rem; margin-bottom: 0.5rem; background: transparent; border-left: none;"
+       data-i18n="wkt_example_label"></p>
+
+    <div class="math-box">MultiPolygon (((611806.91673087 7795510.52059866,
+      611801.83694744 7795491.17645741, 611772.82073558 7795498.79613257,
+      611806.91673087 7795510.52059866)))</div>
+
+    <div style="margin-left: 1rem; font-size: 0.9rem; color: #3e524b;">
+      <ul>
+        <li data-i18n-html="legend1"></li>
+        <li data-i18n-html="legend2"></li>
+        <li data-i18n-html="legend3"></li>
+      </ul>
+    </div>
+
+    <!-- Troubleshooting -->
+    <h2 data-i18n="h2_troubleshoot">🛡️ Solução de Problemas Comuns</h2>
+    <div style="margin: 1rem 0;">
+      <p data-i18n-html="ts1"></p>
+      <p data-i18n-html="ts2"></p>
+      <p data-i18n-html="ts3"></p>
+    </div>
+
+    <!-- Note box -->
+    <div class="note-box" data-i18n-html="note_box"></div>
+
+    <!-- Rodapé -->
+    <div class="footer-tip">
+      <h3 data-i18n="footer_title">Suporte &amp; Integração CAD/GIS</h3>
+      <p style="background: transparent; border-left: none; color: #e8f5e9; padding: 0;"
+         data-i18n="footer_text"></p>
+    </div>
+
+    <hr>
+
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; color: #5a7368; font-size: 0.9rem;">
+      <span data-i18n="copyright">© 2026 ARK-Z ARQUITETURA LTDA — Módulo Geospatial Exporter</span>
+      <span data-i18n="version">Versão 2.0.0 | Módulo de Conversão Geográfica</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCRIPT DE INTERNACIONALIZAÇÃO
+       Detecta o idioma via hash (#pt / #en / #es), query (?lang=xx),
+       ou navegador. Aplica as traduções em todos os elementos
+       marcados com data-i18n ou data-i18n-html.
+       ============================================================ -->
+  <script>
+  (function () {
+    const T = {
+      /* ---------------- PORTUGUÊS ---------------- */
+      pt: {
+        badge_tools: "FERRAMENTAS GEOSPACIAIS & CAD/GIS",
+        h1_title: "Geometry Exporter · Exportador e Conversor de Geometrias",
+        intro: 'O <strong>Geometry Exporter</strong> é uma ferramenta desenvolvida para extração, conversão e reprojeção de dados vetoriais geográficos e geometrias complexas (MultiPolygon, Polygon, LineString, Point) em formatos padronizados para integração entre sistemas CAD e GIS.',
+        img_caption: "Interface de Usuário da Ferramenta Geometry Exporter",
+        h2_features: "🌟 Recursos e Funcionalidades Principais",
+        feat1: "Suporte a múltiplos formatos de saída (WKT, EWKT, GeoJSON, GML2, GML3, KML, GeoPackage, GeoHash e ESRI Shapefile).",
+        feat2: "Reprojeção dinâmica de Sistemas de Referência de Coordenadas (CRS/EPSG).",
+        feat3: "Opções flexíveis de conversão e transformação de eixos/unidades.",
+        feat4: "Cópia direta do código geométrico para a área de transferência (Clipboard).",
+        feat5: "Exportação e salvamento rápido em arquivos de texto/geometria (.txt, .geojson, .wkt).",
+        feat6: "Visualização do código e das coordenadas detalhadas em tempo real.",
+        feat7: "Detecção e suporte a geometrias complexas e entidades com múltiplos anéis (MultiPolygon).",
+        feat8: "Seleção e busca simplificada por códigos EPSG (ex: SIRGAS 2000 / UTM zone 23S - EPSG:31983).",
+        h2_howto: "🚀 Como Utilizar o Geometry Exporter",
+        step1: '<strong>Selecione o Formato de Saída:</strong> No menu suspenso superior esquerdo, escolha o formato geométrico desejado (ex: <em>WKT</em>, <em>GeoJSON</em>).',
+        step2: '<strong>Aplique Transformações/Conversões:</strong> No segundo seletor, defina regras de conversão (ex: <em>No conversion</em> para manter os dados nativos).',
+        step3: '<strong>Escolha o Sistema de Coordenadas (CRS):</strong> Selecione o sistema de projeção correto (ex: <em>EPSG:31983 - SIRGAS 2000 / UTM zone 23S</em>) para garantir a precisão espacial dos dados geográficos.',
+        step4: '<strong>Inspecione o Resultado:</strong> A caixa de texto exibirá instantaneamente a representação em texto da geometria selecionada com alta precisão decimal.',
+        step5: '<strong>Exportar/Copiar:</strong> Clique em <strong>"Copy to Clipboard"</strong> para copiar os dados diretamente para a memória ou utilize <strong>"Save to File"</strong> para salvar o resultado em um arquivo.',
+        h2_formats: "📐 Estrutura e Formatos de Dados Suportados",
+        formats_intro: "A ferramenta opera com padrões internacionais da Open Geospatial Consortium (OGC):",
+        wkt_example_label: "<strong>Exemplo de Saída Geométrica (WKT):</strong>",
+        legend1: "<strong>Tipo de Entidade:</strong> Identifica a topologia vetorial (ex: MultiPolygon, Polygon, Point).",
+        legend2: "<strong>Coordenadas X/Y:</strong> Pares de coordenadas nos eixos Este (Easting) e Norte (Northing) em metros ou graus decimais.",
+        legend3: "<strong>Fechamento de Anel:</strong> O primeiro e o último ponto de cada vértice do polígono devem ser idênticos para validar a topologia.",
+        h2_troubleshoot: "🛡️ Solução de Problemas Comuns",
+        ts1: "<strong>As coordenadas aparecem invertidas (Latitude/Longitude)?</strong><br>Solução: Verifique a configuração de conversão ou altere a projeção para um sistema projetado em métrica (ex: UTM EPSG:31983).",
+        ts2: '<strong>O botão "Copy to Clipboard" não cola os dados?</strong><br>Solução: Certifique-se de que a geometria foi carregada no painel central antes de acionar a cópia.',
+        ts3: "<strong>Divergência de posição no software destino (GIS/CAD)?</strong><br>Solução: Confirme se o código EPSG selecionado no Geometry Exporter é exatamente igual ao sistema de referência utilizado no projeto de destino.",
+        note_box: "<strong>⚠️ Precisão de Coordenadas Geográficas:</strong><br>Os valores numéricos de coordenadas mantêm precisão de até 14 casas decimais para garantir máxima exatidão cartográfica. Ao importar para ambientes CAD, verifique se as unidades de trabalho do arquivo do projeto correspondem às unidades do CRS selecionado (metros, pés ou graus decimais).",
+        footer_title: "Suporte & Integração CAD/GIS",
+        footer_text: "Para dúvidas técnicas adicionais ou integração da ferramenta com automações LISP, Python ou QGIS, consulte Ark-Z Arquitetura Ltda.",
+        copyright: "© 2026 ARK-Z ARQUITETURA LTDA — Módulo Geospatial Exporter",
+        version: "Versão 2.0.0 | Módulo de Conversão Geográfica"
+      },
+
+      /* ---------------- ENGLISH ---------------- */
+      en: {
+        badge_tools: "GEOSPATIAL & CAD/GIS TOOLS",
+        h1_title: "Geometry Exporter · Geometry Exporter and Converter",
+        intro: 'The <strong>Geometry Exporter</strong> is a tool designed for extracting, converting, and reprojecting geographic vector data and complex geometries (MultiPolygon, Polygon, LineString, Point) into standardized formats for integration between CAD and GIS systems.',
+        img_caption: "Geometry Exporter Tool User Interface",
+        h2_features: "🌟 Key Features and Capabilities",
+        feat1: "Support for multiple output formats (WKT, EWKT, GeoJSON, GML2, GML3, KML, GeoPackage, GeoHash, and ESRI Shapefile).",
+        feat2: "Dynamic reprojection of Coordinate Reference Systems (CRS/EPSG).",
+        feat3: "Flexible conversion and axis/unit transformation options.",
+        feat4: "Direct copy of the geometry code to the clipboard.",
+        feat5: "Quick export and saving to text/geometry files (.txt, .geojson, .wkt).",
+        feat6: "Real-time visualization of the code and detailed coordinates.",
+        feat7: "Detection and support for complex geometries and multi-ring entities (MultiPolygon).",
+        feat8: "Simplified selection and search by EPSG codes (e.g., SIRGAS 2000 / UTM zone 23S - EPSG:31983).",
+        h2_howto: "🚀 How to Use Geometry Exporter",
+        step1: '<strong>Select the Output Format:</strong> In the top-left dropdown menu, choose the desired geometry format (e.g., <em>WKT</em>, <em>GeoJSON</em>).',
+        step2: '<strong>Apply Transformations/Conversions:</strong> In the second selector, define conversion rules (e.g., <em>No conversion</em> to keep native data).',
+        step3: '<strong>Choose the Coordinate System (CRS):</strong> Select the correct projection system (e.g., <em>EPSG:31983 - SIRGAS 2000 / UTM zone 23S</em>) to ensure spatial accuracy of geographic data.',
+        step4: '<strong>Inspect the Result:</strong> The text box will instantly display the text representation of the selected geometry with high decimal precision.',
+        step5: '<strong>Export/Copy:</strong> Click <strong>"Copy to Clipboard"</strong> to copy the data directly to memory, or use <strong>"Save to File"</strong> to save the result to a file.',
+        h2_formats: "📐 Structure and Supported Data Formats",
+        formats_intro: "The tool operates with international Open Geospatial Consortium (OGC) standards:",
+        wkt_example_label: "<strong>Example of Geometric Output (WKT):</strong>",
+        legend1: "<strong>Entity Type:</strong> Identifies the vector topology (e.g., MultiPolygon, Polygon, Point).",
+        legend2: "<strong>X/Y Coordinates:</strong> Pairs of coordinates on the Easting and Northing axes in meters or decimal degrees.",
+        legend3: "<strong>Ring Closure:</strong> The first and last points of each polygon vertex must be identical to validate the topology.",
+        h2_troubleshoot: "🛡️ Troubleshooting Common Issues",
+        ts1: "<strong>Are the coordinates inverted (Latitude/Longitude)?</strong><br>Solution: Check the conversion settings or change the projection to a metric-based system (e.g., UTM EPSG:31983).",
+        ts2: '<strong>The "Copy to Clipboard" button does not paste data?</strong><br>Solution: Make sure the geometry has been loaded into the central panel before triggering the copy.',
+        ts3: "<strong>Position mismatch in the target software (GIS/CAD)?</strong><br>Solution: Confirm that the EPSG code selected in Geometry Exporter is exactly the same as the reference system used in the target project.",
+        note_box: "<strong>⚠️ Geographic Coordinate Precision:</strong><br>Numeric coordinate values retain precision of up to 14 decimal places to ensure maximum cartographic accuracy. When importing into CAD environments, verify that the working units of the project file match the units of the selected CRS (meters, feet, or decimal degrees).",
+        footer_title: "Support & CAD/GIS Integration",
+        footer_text: "For additional technical questions or integration of the tool with LISP, Python, or QGIS automations, consult Ark-Z Arquitetura Ltda.",
+        copyright: "© 2026 ARK-Z ARQUITETURA LTDA — Geospatial Exporter Module",
+        version: "Version 2.0.0 | Geographic Conversion Module"
+      },
+
+      /* ---------------- ESPAÑOL ---------------- */
+      es: {
+        badge_tools: "HERRAMIENTAS GEOESPACIALES & CAD/GIS",
+        h1_title: "Geometry Exporter · Exportador y Conversor de Geometrías",
+        intro: 'El <strong>Geometry Exporter</strong> es una herramienta diseñada para la extracción, conversión y reproyección de datos vectoriales geográficos y geometrías complejas (MultiPolygon, Polygon, LineString, Point) en formatos estandarizados para la integración entre sistemas CAD y GIS.',
+        img_caption: "Interfaz de Usuario de la Herramienta Geometry Exporter",
+        h2_features: "🌟 Recursos y Funcionalidades Principales",
+        feat1: "Soporte para múltiples formatos de salida (WKT, EWKT, GeoJSON, GML2, GML3, KML, GeoPackage, GeoHash y ESRI Shapefile).",
+        feat2: "Reproyección dinámica de Sistemas de Referencia de Coordenadas (CRS/EPSG).",
+        feat3: "Opciones flexibles de conversión y transformación de ejes/unidades.",
+        feat4: "Copia directa del código geométrico al portapapeles.",
+        feat5: "Exportación y guardado rápido en archivos de texto/geometría (.txt, .geojson, .wkt).",
+        feat6: "Visualización en tiempo real del código y de las coordenadas detalladas.",
+        feat7: "Detección y soporte de geometrías complejas y entidades con múltiples anillos (MultiPolygon).",
+        feat8: "Selección y búsqueda simplificada por códigos EPSG (ej: SIRGAS 2000 / UTM zone 23S - EPSG:31983).",
+        h2_howto: "🚀 Cómo Utilizar Geometry Exporter",
+        step1: '<strong>Seleccione el Formato de Salida:</strong> En el menú desplegable superior izquierdo, elija el formato geométrico deseado (ej: <em>WKT</em>, <em>GeoJSON</em>).',
+        step2: '<strong>Aplique Transformaciones/Conversiones:</strong> En el segundo selector, defina reglas de conversión (ej: <em>No conversion</em> para mantener los datos nativos).',
+        step3: '<strong>Elija el Sistema de Coordenadas (CRS):</strong> Seleccione el sistema de proyección correcto (ej: <em>EPSG:31983 - SIRGAS 2000 / UTM zone 23S</em>) para garantizar la precisión espacial de los datos geográficos.',
+        step4: '<strong>Inspeccione el Resultado:</strong> El cuadro de texto mostrará instantáneamente la representación en texto de la geometría seleccionada con alta precisión decimal.',
+        step5: '<strong>Exportar/Copiar:</strong> Haga clic en <strong>"Copy to Clipboard"</strong> para copiar los datos directamente a la memoria, o utilice <strong>"Save to File"</strong> para guardar el resultado en un archivo.',
+        h2_formats: "📐 Estructura y Formatos de Datos Soportados",
+        formats_intro: "La herramienta opera con estándares internacionales del Open Geospatial Consortium (OGC):",
+        wkt_example_label: "<strong>Ejemplo de Salida Geométrica (WKT):</strong>",
+        legend1: "<strong>Tipo de Entidad:</strong> Identifica la topología vectorial (ej: MultiPolygon, Polygon, Point).",
+        legend2: "<strong>Coordenadas X/Y:</strong> Pares de coordenadas en los ejes Este (Easting) y Norte (Northing) en metros o grados decimales.",
+        legend3: "<strong>Cierre de Anillo:</strong> El primer y último punto de cada vértice del polígono deben ser idénticos para validar la topología.",
+        h2_troubleshoot: "🛡️ Solución de Problemas Comunes",
+        ts1: "<strong>¿Las coordenadas aparecen invertidas (Latitud/Longitud)?</strong><br>Solución: Verifique la configuración de conversión o cambie la proyección a un sistema métrico (ej: UTM EPSG:31983).",
+        ts2: '<strong>¿El botón "Copy to Clipboard" no pega los datos?</strong><br>Solución: Asegúrese de que la geometría se haya cargado en el panel central antes de activar la copia.',
+        ts3: "<strong>¿Divergencia de posición en el software de destino (GIS/CAD)?</strong><br>Solución: Confirme que el código EPSG seleccionado en Geometry Exporter sea exactamente igual al sistema de referencia utilizado en el proyecto de destino.",
+        note_box: "<strong>⚠️ Precisión de Coordenadas Geográficas:</strong><br>Los valores numéricos de coordenadas mantienen una precisión de hasta 14 decimales para garantizar la máxima exactitud cartográfica. Al importar a entornos CAD, verifique que las unidades de trabajo del archivo del proyecto correspondan a las unidades del CRS seleccionado (metros, pies o grados decimales).",
+        footer_title: "Soporte & Integración CAD/GIS",
+        footer_text: "Para consultas técnicas adicionales o integración de la herramienta con automatizaciones LISP, Python o QGIS, consulte Ark-Z Arquitetura Ltda.",
+        copyright: "© 2026 ARK-Z ARQUITETURA LTDA — Módulo Geospatial Exporter",
+        version: "Versión 2.0.0 | Módulo de Conversión Geográfica"
+      }
+    };
+
+    /* ---- Detecção do idioma ---- */
+    function detectLang() {
+      // 1) Hash:  index.html#pt
+      const hash = (window.location.hash || '').replace('#', '').toLowerCase();
+      if (T[hash]) return hash;
+
+      // 2) Query string:  index.html?lang=en
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const q = (params.get('lang') || '').toLowerCase();
+        if (T[q]) return q;
+      } catch (e) { /* ignora */ }
+
+      // 3) Idioma do navegador:  pt-BR -> pt
+      const browser = (navigator.language || 'en').toLowerCase().split(/[-_]/)[0];
+      if (T[browser]) return browser;
+
+      // 4) Fallback
+      return 'en';
+    }
+
+    // Prioridade: lang.js (gravado pelo Python) > detecção automática
+    const lang = (typeof window.__LANG__ !== 'undefined' && T[window.__LANG__])
+             ? window.__LANG__
+             : detectLang();
+    const dict = T[lang];
+
+    // Atualiza o atributo lang do <html>
+    document.documentElement.lang = lang;
+
+    // Aplica traduções em elementos de texto simples
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) el.textContent = dict[key];
+    });
+
+    // Aplica traduções em elementos com HTML interno
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      const key = el.getAttribute('data-i18n-html');
+      if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+  })();
+  </script>
+</body>
+</html>

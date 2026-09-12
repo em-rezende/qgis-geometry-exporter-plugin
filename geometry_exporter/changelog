@@ -1,0 +1,41 @@
+---------------------------------------------------------------------
+HISTORICO DE ALTERACOES / CHANGELOG - GEOMETRY EXPORTER
+---------------------------------------------------------------------
+
+[2.0.0-ptBR] - 2026-09-12
+Desenvolvedor da versao: Ezequiel M. Rezende <emrezende@gmail.com>
+
+ALTERACOES E NOVAS FUNCIONALIDADES:
+- Traducao completa do plugin, menus, caixa de dialogo e alertas do
+  MessageBar para o Portugues do Brasil (pt-BR).
+- Traducao e padronizacao das opcoes de conversao (Sem conversao,
+  Retangulo Envolvente, Centroide, Envoltoria Convexa, Limite/Fronteira).
+- Adicionada opcao para exportar geometrias no formato GeoHash
+  (precisao de 12 caracteres com conversao automatica para WGS84).
+- Adicionada compatibilidade com exportacao para novos formatos espaciais
+  completos: GeoPackage (.gpkg) e ESRI Shapefile (.shp).
+- Adicionado o botao "Salvar em Arquivo" para gravar os dados vetoriais 
+  diretamente em disco com reprojecao dinamica de SRC.
+- Implementado tratamento dinamico de SRC para o formato KML para 
+  garantir o padrao EPSG:4326.
+- Implementado salvamento de saidas em texto puro (WKT, EWKT, GeoHash) 
+  em arquivos .txt com codificacao UTF-8.
+
+
+---------------------------------------------------------------------
+
+[1.0.0] - 2015-11-22
+Autor original: Juergen Weichand <juergen@weichand.de>
+Repositorio original: https://github.com/JuergenWeichand/qgis-geometry-exporter-plugin
+homepage=http://www.weichand.de
+
+RECURSOS DA VERSAO INICIAL:
+- Lancamento inicial do plugin Geometry Exporter para QGIS.
+- Suporte a exportacao de geometrias de feicoes selecionadas em texto.
+- Suporte aos formatos: WKT, EWKT, GML2, GML3, GeoJSON e KML.
+- Suporte a conversoes geometricas ad-hoc: Envelope, Centroid, 
+  ConvexHull e Boundary.
+- Suporte a transformacao dinamica de Sistema de Referencia de 
+  Coordenadas (SRC/CRS).
+- Copia de geometrias geradas diretamente para a area de transferencia.
+
