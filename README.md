@@ -47,6 +47,12 @@ The plugin automatically detects the language configured in QGIS. The following 
 
 Translation is handled by the `i18n.py` file, which contains an internal dictionary with all plugin texts. To add a new language, simply add a new entry to the `TRANSLATIONS` dictionary.
 
+## 🖥️ Interface
+
+Geometry Exporter Tool User Interface
+
+![Geometry Exporter interface](geometry_exporter/help/image_01.png)
+
 ## 🚀 Installation
 
 ### Method 1: Installation via QGIS (Recommended)
